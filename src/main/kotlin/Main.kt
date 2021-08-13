@@ -1,14 +1,22 @@
+import kotlin.random.Random
+
 fun main() {
-    val dado1 = Dado()
-    val dado2 = Dado()
 
-    dado1.darValores(3,4)
-    dado2.darValores(0,30)
+    val listaDados = List(100) { Dado() }
 
-    println("El dado1 ha obtenido un en tiradaUnica ${dado1.tiradaUnica()}")
-    println("El dado1 ha obtenido un en tiradaDoble ${dado1.tiradaDoble()}")
+    listaDados.forEach { dado ->
+        dado.darValores(Random.nextInt(0, 100), Random.nextInt(0, 100))
+    }
 
-    println("El dado2 ha obtenido un en tiradaUnica ${dado2.tiradaUnica()}")
-    println("El dado2 ha obtenido un en tiradaDoble ${dado2.tiradaDoble()}")
+    listaDados.forEachIndexed { index, dado ->
+        for (i in 0 until 100 ) {
+            dado.tiradaDoble()
+            dado.tiradaUnica()
+        }
+
+        println("Para el dado$index:")
+        dado.mostrarEstadisticas()
+    }
+
 
 }
