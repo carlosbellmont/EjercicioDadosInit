@@ -1,10 +1,10 @@
 # EjercicioDados
 
-Este ejercicio resuelve el siguiente enunciado:
+Partiendo del ejercicio anterior (https://github.com/carlosbellmont/EjercicioDados).
 
-Crea una clase dado. 
-Tendrá que tener un número mínimo y máximo que sean privados. Crea una función que permita cambiar estos dos valores a la vez.
-Haz una función que se llame tiradaUnica que devuelve un resultado dentro del rango del dado.
-Haz una función que se llame tiradaMultiple. En este caso se tirará dos veces el dato y devolverá la suma de los dos números salvo que haya obtenido dos números iguales, en ese caso devolverá la multiplicación de ambos números.
-Créate un segundo dado que tenga distintos valores que el anterior sin modificar el dado anterior.
-Realiza una tirada de ambos dados.
+Crea 100 dados con número máximo y número mínimo aleatorio en cada uno de ellos. Tira 200 veces cada dado en tirada múltiple.
+Haz una función que devuelva la media de tiradas únicas del dado.
+Haz una función que devuelva la media de tiradas dobles del dado.
+Cuando ya han tirado todos los dados, imprime la media de todos los dados y la media de ambas tiradas (múltiple y única).
+Atención! Si se cambia el rango de valores la media debe reiniciarse.
+
