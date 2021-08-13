@@ -2,7 +2,7 @@ import kotlin.random.Random
 
 fun main() {
 
-    val listaDados = List(100) { Dado() }
+    val listaDados = List(100) { DadoConstructorPredefinido() }
 
     listaDados.forEach { dado ->
         dado.darValores(Random.nextInt(0, 100), Random.nextInt(0, 100))

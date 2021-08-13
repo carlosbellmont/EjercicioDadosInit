@@ -1,8 +1,8 @@
 import kotlin.random.Random
 
-class Dado {
-    private var numMin = 0
-    private var numMax = 10
+class DadoConstructor(valorMin: Int, valorMax: Int) {
+    private var numMin = valorMin
+    private var numMax = valorMax
     private var resultadosTiradaDoble = mutableListOf<Int>()
     private var resultadosTiradaUnica = mutableListOf<Int>()
 
